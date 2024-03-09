@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simran's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/05d6fdbbf7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi! I am <span>Simran Raj</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img  src="images/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        As a student of engineering, I have a strong interest in digital solutions that combine design and utility.
+                         Using proficiency in Python, Java, C, and JavaScript (including frameworks like React),
+                          I create dynamic web applications and create user interfaces using programs like Adobe XD. 
+                          I guarantee exceptional experiences across platforms by utilizing iterative procedures and gathering input from users.
+                           Dedicated to lifelong learning,
+                         I'm prepared to make a contribution to the rapidly developing design and technology industries.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            Education
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Developer</span><br>web app/pages development
+                            </li>
+                            <li>
+                                <span>UI/UX</span><br>designing web/app interfaces
+                            </li>
+                            <li>
+                                <span>App Development</span><br>Building app using java
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"></div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>10th</span><br>Chapra Central School
+                            </li>
+                            <li>
+                                <span>12th</span><br>RNP public school
+                            </li>
+                            <li>
+                                <span>BTech(IIOT)</span><br>GGIPU, New Delhi
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!------services------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+<div class="services-list">
+    <div>
+        <i class="fa-regular fa-file-code"></i>
+        <h2> 
+            Web Design
+        </h2>
+        <p>I specialize in creating customized, cutting-edge websites that prioritize user experience. <br>
+            With my skil and transparent communication, I ensure reliability and support throughout  <br>the development process.
+            Let me elevate your online presence and make a lasting  <br>impact on your audience.</p><br>
+            <a href="#">Learn more</a>
+    </div>
+    <div>
+        <i class="fa-regular fa-file-code"></i>
+        <h2>
+            App Development
+        </h2>
+        <p> I excel in crafting innovative mobile applications that meet your specific needs. 
+            With a focus on user experience and cutting-edge technology, my skills ensures seamless development and transparent communication. 
+            Let us bring your app idea to life and make a meaningful impact in the digital world.</p><br>
+            <a href="#">Learn more</a>
+    </div>
+
+</div>
+    </div>
+</div>
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
